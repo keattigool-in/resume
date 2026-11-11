@@ -1,0 +1,19 @@
+# รูปต้นฉบับที่ยังไม่ปิดข้อมูล (ห้ามขึ้น GitHub) — หน้าเว็บใช้ Portfolio_public/
+Portfolio/
+
+# ไฟล์ Word ต้นฉบับ (หน้าเว็บใช้ Resume&CV.pdf)
+Resume&CV.docx
+CV.docx
+*.docx
+~$*
+
+# โฟลเดอร์สำรองไฟล์เก่าในเครื่อง
+B/
+
+# ใช้กับ Apache เท่านั้น GitHub Pages ไม่อ่านไฟล์นี้
+.htaccess
+
+# ไฟล์ระบบของ Windows / macOS
+Thumbs.db
+desktop.ini
+.DS_Store

@@ -1,0 +1,1085 @@
+<!doctype html>
+<html lang="th" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>เกียรติกุล อินอุ่นโชติ | Resume &amp; Portfolio</title>
+  <meta name="description" content="เกียรติกุล อินอุ่นโชติ — Head of Marketing & Information Technology ประสบการณ์ด้าน IT มากกว่า 10 ปี">
+  <!-- กันบอท: ห้ามเก็บเข้าดัชนี/แคช/รูป และห้ามนำไปเทรน AI (GitHub Pages ใช้ .htaccess ไม่ได้ จึงต้องประกาศในหน้า) -->
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex, notranslate">
+  <meta name="robots" content="noai, noimageai">
+  <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+  <meta name="google-extended" content="noindex, nofollow">
+  <meta name="bingbot" content="noindex, nofollow, noarchive, nosnippet">
+  <meta name="referrer" content="same-origin">
+  <meta name="format-detection" content="telephone=no, email=no, address=no">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&family=Prompt:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --ink: #050c1a;
+      --navy: #0c1a38;
+      --accent: #1a46c4;
+      --accent-2: #f0960f;
+      --muted: #263042;
+      --surface: #ffffff;
+      --surface-2: #e9edf5;
+      --line: #cfd7e6;
+      --radius: 18px;
+      --shadow: 0 10px 30px -12px rgba(15, 27, 51, .18);
+    }
+    [data-bs-theme="dark"] {
+      --ink: #f1f4fa;
+      --muted: #c3cbdc;
+      --surface: #111a2e;
+      --surface-2: #0b1222;
+      --line: #22304d;
+      --shadow: 0 10px 30px -12px rgba(0, 0, 0, .6);
+    }
+    html { scroll-behavior: smooth; scroll-padding-top: 76px; }
+    body {
+      font-family: "IBM Plex Sans Thai", system-ui, sans-serif;
+      background: var(--surface-2);
+      color: var(--ink);
+      line-height: 1.75;
+    }
+    h1, h2, h3, h4, .font-head { font-family: "Prompt", "IBM Plex Sans Thai", sans-serif; letter-spacing: -.01em; }
+    .text-muted-2 { color: var(--muted) !important; }
+    section { padding: 96px 0; }
+
+    /* ---------- Navbar ---------- */
+    .navbar-main {
+      background: rgba(15, 27, 51, .0);
+      transition: background .3s, box-shadow .3s, padding .3s;
+      padding: 18px 0;
+    }
+    .navbar-main.scrolled {
+      background: rgba(15, 27, 51, .92);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 6px 20px -10px rgba(0,0,0,.5);
+      padding: 10px 0;
+    }
+    .navbar-main .nav-link { color: rgba(255,255,255,.75); font-weight: 500; }
+    .navbar-main .nav-link:hover, .navbar-main .nav-link.active { color: #fff; }
+    .brand-mark {
+      width: 38px; height: 38px; border-radius: 11px;
+      background: linear-gradient(135deg, var(--accent), #6c8cff);
+      display: grid; place-items: center; color: #fff; font-family: Prompt; font-weight: 700;
+    }
+    .btn-theme { display: grid; place-items: center; padding: 0; color: #fff; border: 1px solid rgba(255,255,255,.25); border-radius: 50%; width: 38px; height: 38px; }
+    .btn-theme:hover { color: #fff; background: rgba(255,255,255,.1); }
+    @media (max-width: 991.98px) {
+      .navbar-main .navbar-collapse { background: rgba(15,27,51,.97); border-radius: 14px; padding: 12px 16px; margin-top: 10px; }
+    }
+
+    /* ---------- Hero ---------- */
+    .hero {
+      position: relative; overflow: hidden;
+      background: radial-gradient(1200px 600px at 85% -10%, rgba(26,70,196,.35), transparent 60%),
+                  radial-gradient(800px 500px at -10% 110%, rgba(245,165,36,.18), transparent 60%),
+                  linear-gradient(160deg, #050b1c 0%, #0c1a38 60%, #070f24 100%);
+      color: #fff; padding: 150px 0 110px;
+    }
+    .hero::after {
+      content: ""; position: absolute; inset: 0;
+      background-image: linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px);
+      background-size: 48px 48px; mask-image: linear-gradient(to bottom, #000 30%, transparent 100%);
+      pointer-events: none;
+    }
+    .hero .container { position: relative; z-index: 1; }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: .9rem; padding: 6px 14px; border-radius: 999px;
+      background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.15);
+    }
+    .eyebrow .dot { width: 8px; height: 8px; border-radius: 50%; background: #34d399; box-shadow: 0 0 0 4px rgba(52,211,153,.2); }
+    .hero h1 { font-size: clamp(2.2rem, 5vw, 3.6rem); font-weight: 700; line-height: 1.2; }
+    .hero h1 .grad { background: linear-gradient(90deg, #8fb0ff, #fff 60%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .hero .lead { color: rgba(255,255,255,.78); max-width: 620px; }
+    .hero-role { font-size: 1.2rem; color: var(--accent-2); font-weight: 600; }
+    .photo-wrap { position: relative; max-width: 304px; margin-inline: auto; }
+    .photo-wrap::before {
+      content: ""; position: absolute; inset: -14px; border-radius: 32px;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2)); opacity: .55; filter: blur(28px);
+    }
+    .photo-wrap img { position: relative; border-radius: 28px; width: 100%; height: auto; aspect-ratio: 4/5; object-fit: cover; border: 4px solid rgba(255,255,255,.15); }
+    @media (max-width: 991.98px) {
+      .hero { padding: 110px 0 100px; }
+      .photo-wrap { max-width: 208px; }
+    }
+    @media (max-width: 575.98px) {
+      .photo-wrap { max-width: 168px; }
+    }
+    .btn-accent { background: var(--accent); border-color: var(--accent); color: #fff; }
+    /* ปุ่มบนพื้นกรมท่า (หัวเว็บ): เมาส์โอเวอร์เป็นน้ำเงินสว่าง / ขอบส้มทอง ให้เห็นชัดบนพื้นเข้ม */
+    .btn-accent:hover, .btn-accent:focus-visible { background: #2f63e8; border-color: #2f63e8; color: #fff; box-shadow: 0 10px 22px -8px rgba(47,99,232,.7); }
+    .btn-ghost { color: #fff; border: 1px solid rgba(255,255,255,.3); }
+    .btn-ghost:hover, .btn-ghost:focus-visible { background: rgba(240,150,15,.12); border-color: var(--accent-2); color: #f5b34a; }
+
+    /* ---------- Stats ---------- */
+    .stats { margin-top: -56px; position: relative; z-index: 2; padding: 0; }
+    .stat-card {
+      background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+      box-shadow: var(--shadow); padding: 22px; height: 100%;
+    }
+    .stat-num { font-family: Prompt; font-size: 2.2rem; font-weight: 700; color: var(--accent); line-height: 1; }
+    .stat-label { color: var(--muted); font-size: .95rem; margin-top: 6px; }
+
+    /* ---------- Section heading ---------- */
+    .section-kicker { color: var(--accent); font-weight: 600; letter-spacing: .12em; text-transform: uppercase; font-size: .8rem; }
+    .section-title { font-size: clamp(1.8rem, 3.5vw, 2.5rem); font-weight: 700; margin: 6px 0 14px; }
+
+    .card-soft {
+      background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+    .icon-box {
+      width: 48px; height: 48px; border-radius: 14px; display: grid; place-items: center;
+      background: rgba(26,70,196,.1); color: var(--accent); font-size: 1.35rem; flex-shrink: 0;
+    }
+    .icon-box.amber { background: rgba(245,165,36,.14); color: #a86200; }
+    .info-list li { display: flex; gap: 12px; align-items: center; padding: 8px 0; }
+    .info-list i { color: var(--accent); }
+
+    /* ---------- Timeline ---------- */
+    .timeline { position: relative; padding-left: 34px; }
+    .timeline::before { content: ""; position: absolute; left: 11px; top: 6px; bottom: 6px; width: 2px; background: var(--line); }
+    .tl-item { position: relative; margin-bottom: 28px; }
+    .tl-item::before {
+      content: ""; position: absolute; left: -29px; top: 8px; width: 14px; height: 14px; border-radius: 50%;
+      background: var(--surface); border: 3px solid var(--accent);
+    }
+    .tl-item.current::before { background: var(--accent); box-shadow: 0 0 0 5px rgba(26,70,196,.18); }
+    .role-pill {
+      display: inline-flex; align-items: center; gap: 8px; font-size: .88rem;
+      padding: 4px 12px; border-radius: 999px; background: var(--surface-2); border: 1px solid var(--line); margin: 0 6px 8px 0;
+    }
+    .role-pill.now {
+      background: linear-gradient(135deg, var(--accent), #2f63e8); border-color: transparent; color: #fff;
+      font-weight: 700; font-size: 1.08rem; padding: 8px 18px;
+      box-shadow: 0 8px 18px -8px rgba(26,70,196,.7);
+    }
+    .role-pill.now i { color: var(--accent-2); }
+    .duty li { margin-bottom: 6px; }
+    .duty li::marker { color: var(--accent); }
+
+    /* ---------- Skills ---------- */
+    .skill-chip {
+      display: inline-block; padding: 6px 14px; margin: 0 6px 8px 0; border-radius: 10px;
+      background: var(--surface-2); border: 1px solid var(--line); font-size: .92rem; transition: .2s;
+    }
+    .skill-chip:hover { border-color: var(--accent); color: var(--accent); }
+
+    /* ---------- Portfolio ---------- */
+    .filter-bar { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+    .filter-bar .btn {
+      border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); padding: 6px 18px;
+    }
+    .filter-bar .btn:hover { background: #e3eafb; border-color: var(--accent); color: var(--accent); }
+    [data-bs-theme="dark"] .filter-bar .btn:hover { background: rgba(26,70,196,.3); color: #fff; }
+    .filter-bar .btn.active, .filter-bar .btn.active:hover { background: var(--navy); border-color: var(--navy); color: #fff; }
+    [data-bs-theme="dark"] .filter-bar .btn.active { background: var(--accent); border-color: var(--accent); }
+    .work-card {
+      background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden;
+      box-shadow: var(--shadow); height: 100%; cursor: pointer; transition: transform .25s, box-shadow .25s;
+      display: flex; flex-direction: column; text-align: left; padding: 0; width: 100%; color: inherit;
+    }
+    .work-card:hover, .work-card:focus-visible { transform: translateY(-6px); box-shadow: 0 22px 40px -18px rgba(15,27,51,.35); }
+    .work-thumb { position: relative; aspect-ratio: 16/10; overflow: hidden; background: #0f1b33; }
+    .work-thumb img { width: 100%; height: 100%; object-fit: cover; object-position: top center; transition: transform .6s; }
+    .work-card:hover .work-thumb img { transform: scale(1.05); }
+    .work-thumb .zoom {
+      position: absolute; inset: 0; display: grid; place-items: center; background: rgba(15,27,51,.55);
+      color: #fff; opacity: 0; transition: opacity .25s; font-size: 1.1rem;
+    }
+    .work-card:hover .zoom { opacity: 1; }
+    .work-body { padding: 18px 20px 20px; flex: 1; }
+    .work-tag { font-size: .75rem; font-weight: 600; color: var(--accent); text-transform: uppercase; letter-spacing: .06em; }
+    .work-title { font-size: 1.08rem; font-weight: 600; margin: 4px 0 6px; font-family: Prompt; }
+    .work-desc { color: var(--muted); font-size: .92rem; margin: 0; }
+    .work-item.hide { display: none; }
+
+    #workModal .modal-content { border-radius: 20px; overflow: hidden; border: 0; }
+    #workModal .modal-img-wrap { background: #0b1222; }
+    #workModal .modal-img-wrap img { width: 100%; max-height: 72vh; object-fit: contain; display: block; }
+    .modal-nav { position: absolute; top: 50%; transform: translateY(-50%); z-index: 3; width: 44px; height: 44px; border-radius: 50%; border: 0; background: rgba(255,255,255,.9); color: var(--navy); box-shadow: 0 6px 16px rgba(0,0,0,.3); }
+    .modal-nav.prev { left: 12px; } .modal-nav.next { right: 12px; }
+
+    .work-link-hint { font-size: .8rem; color: var(--accent); font-weight: 600; margin-top: 10px; display: inline-flex; align-items: center; gap: 6px; }
+    .ref-link {
+      display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; border-radius: 999px; margin: 0 6px 8px 0;
+      background: rgba(26,70,196,.1); color: var(--accent); text-decoration: none; font-size: .9rem; font-weight: 500; border: 1px solid rgba(26,70,196,.25);
+    }
+    .ref-link:hover { background: var(--accent); color: #fff; }
+    /* ปุ่มเด่น (สีทึบตั้งแต่ก่อนเมาส์โอเวอร์) */
+    .ref-link.cta {
+      background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600;
+      padding: 9px 20px; box-shadow: 0 8px 18px -8px rgba(26,70,196,.7);
+    }
+    .ref-link.cta i { color: var(--accent-2); }
+    .ref-link.cta:hover { background: var(--navy); border-color: var(--navy); color: #fff; transform: translateY(-1px); }
+    [data-bs-theme="dark"] .ref-link.cta:hover { background: #2f63e8; border-color: #2f63e8; }
+
+    /* ---------- Channels (ช่องทางออนไลน์ที่ดูแล) ---------- */
+    .brand-card { display: flex; flex-direction: column; height: 100%; padding: 28px; }
+    .brand-logo {
+      height: 92px; border-radius: 14px; background: #fff; border: 1px solid var(--line);
+      display: grid; place-items: center; padding: 16px 24px; margin-bottom: 18px;
+    }
+    .brand-logo img { max-height: 56px; max-width: 100%; object-fit: contain; }
+    .brand-badge {
+      align-self: flex-start; font-size: .75rem; font-weight: 600; padding: 3px 10px; border-radius: 999px;
+      background: rgba(245,165,36,.14); color: #8f5200;
+    }
+    [data-bs-theme="dark"] .brand-badge { color: var(--accent-2); }
+    .role-list { list-style: none; padding: 0; color: var(--muted); }
+    .role-list li { display: flex; gap: 8px; margin-bottom: 6px; line-height: 1.5; }
+    .role-list i { color: var(--accent); margin-top: 2px; }
+    .company-strip {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 16px; justify-content: center;
+      max-width: 860px; margin: 0 auto 40px; padding: 16px 22px; border-radius: 16px;
+      background: var(--surface); border: 1px solid var(--line); box-shadow: var(--shadow); text-align: left;
+    }
+    .company-strip img { height: 36px; width: auto; background: #fff; border-radius: 8px; padding: 4px 8px; }
+    .channel-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 10px; }
+    .channel {
+      display: flex; align-items: center; gap: 10px; padding: 10px 12px; border-radius: 12px;
+      background: var(--surface-2); border: 1px solid var(--line); color: var(--ink); text-decoration: none;
+      transition: border-color .2s, transform .2s, box-shadow .2s; min-width: 0;
+    }
+    .channel:hover { border-color: var(--accent); color: var(--ink); transform: translateY(-2px); box-shadow: 0 8px 18px -10px rgba(26,70,196,.5); }
+    .channel .ch-icon { width: 34px; height: 34px; border-radius: 50%; background: #fff; display: grid; place-items: center; flex-shrink: 0; border: 1px solid var(--line); }
+    .channel .ch-icon img { width: 20px; height: 20px; object-fit: contain; }
+    .channel .ch-text { min-width: 0; line-height: 1.25; }
+    .channel .ch-name { font-weight: 600; font-size: .92rem; }
+
+    /* ---------- Education ---------- */
+    /* ตัวเลขปี: โทนขาวเทา (ในโหมดสว่างใช้เทากลางเพื่อให้ยังอ่านออกบนพื้นขาว) */
+    .edu-year { font-family: Prompt; font-weight: 600; color: #6b7280; white-space: nowrap; }
+    [data-bs-theme="dark"] .edu-year { color: #d1d7e2; }
+
+    /* ป้ายตำแหน่งที่กดได้ -> เลื่อนไปที่เนื้อหาของตำแหน่งนั้น */
+    a.role-pill { text-decoration: none; color: var(--ink); transition: background .25s, color .25s, border-color .25s, transform .2s, box-shadow .25s; }
+    /* โทนปุ่มของเว็บ: น้ำเงินหลัก (--accent) · กรมท่า (--navy) · ส้มทอง (--accent-2) */
+    /* ก่อนเมาส์โอเวอร์: ป้ายตำแหน่งเก่า = พื้นน้ำเงินอ่อน ตัวกรมท่า */
+    a.role-pill:not(.now) {
+      background: linear-gradient(135deg, #dbe4fb, #c3d1f5); border-color: #9fb3ea; color: var(--navy); font-weight: 600;
+    }
+    :where([data-bs-theme="dark"]) a.role-pill:not(.now) {
+      background: linear-gradient(135deg, rgba(26,70,196,.55), rgba(26,70,196,.35)); border-color: rgba(120,150,255,.5); color: #fff;
+    }
+    /* เมาส์โอเวอร์: น้ำเงินหลัก → กรมท่า ตัวขาว */
+    a.role-pill:hover, a.role-pill:focus-visible {
+      background: linear-gradient(135deg, var(--accent), var(--navy)); border-color: transparent; color: #fff;
+      transform: translateY(-2px); box-shadow: 0 10px 22px -8px rgba(26,70,196,.6);
+    }
+    /* ตำแหน่งปัจจุบัน: ปกติน้ำเงิน · เมาส์โอเวอร์ส้มทอง ตัวกรมท่า */
+    a.role-pill.now:hover, a.role-pill.now:focus-visible {
+      background: linear-gradient(135deg, #f5b34a, var(--accent-2)); color: var(--navy);
+      box-shadow: 0 10px 22px -8px rgba(240,150,15,.6);
+    }
+    a.role-pill.now:hover i, a.role-pill.now:focus-visible i { color: var(--navy); }
+    a.role-pill .bi-arrow-down-short { font-size: 1.1em; opacity: .75; }
+    .role-target { scroll-margin-top: 90px; }
+
+    /* หัวข้อตำแหน่งในประสบการณ์ทำงาน: เด่น + ปีต่อท้ายชื่อตำแหน่ง */
+    .role-head {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px;
+      padding: 10px 16px; border-radius: 12px;
+      background: rgba(26,70,196,.08); border: 1px solid rgba(26,70,196,.22);
+    }
+    .role-title { margin: 0; font-family: Prompt, sans-serif; font-size: 1.3rem; font-weight: 700; color: var(--accent); }
+    .role-year {
+      font-family: Prompt, sans-serif; font-size: .92rem; font-weight: 600; white-space: nowrap;
+      padding: 2px 12px; border-radius: 999px; background: var(--surface); border: 1px solid var(--line); color: #6b7280;
+    }
+    .role-head.now { background: linear-gradient(135deg, var(--accent), #2f63e8); border-color: transparent; }
+    .role-head.now .role-title { color: #fff; font-size: 1.4rem; }
+    .role-head.now .role-year { background: rgba(255,255,255,.16); border-color: rgba(255,255,255,.3); color: #e5e9f2; }
+    [data-bs-theme="dark"] .role-head { background: rgba(80,120,255,.12); border-color: rgba(120,150,255,.3); }
+    [data-bs-theme="dark"] .role-title { color: #9db8ff; }
+    [data-bs-theme="dark"] .role-year { color: #d1d7e2; }
+    [data-bs-theme="dark"] .role-head.now { background: linear-gradient(135deg, var(--accent), #2f63e8); }
+    [data-bs-theme="dark"] .role-head.now .role-title { color: #fff; }
+
+    /* ---------- Contact ---------- */
+    .contact-band {
+      background: linear-gradient(135deg, #0a1631, #142c66); color: #fff; border-radius: 28px; padding: 56px 40px; position: relative; overflow: hidden;
+    }
+    .contact-band::after {
+      content: ""; position: absolute; width: 380px; height: 380px; border-radius: 50%; right: -120px; top: -140px;
+      background: radial-gradient(circle, rgba(245,165,36,.35), transparent 70%);
+    }
+    .contact-item {
+      display: flex; gap: 14px; align-items: center; background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.14);
+      border-radius: 16px; padding: 16px 18px; color: #fff; text-decoration: none; height: 100%; transition: .2s; position: relative; z-index: 1;
+    }
+    a.contact-item:hover { background: rgba(240,150,15,.14); border-color: rgba(240,150,15,.55); color: #fff; }
+    .contact-item i { font-size: 1.4rem; color: var(--accent-2); }
+    @media (max-width: 575.98px) { .contact-band { padding: 40px 20px; } section { padding: 72px 0; } }
+
+    footer { color: var(--muted); font-size: .9rem; padding: 28px 0 36px; }
+
+    .to-top {
+      position: fixed; right: 18px; bottom: 18px; width: 46px; height: 46px; border-radius: 50%; border: 0;
+      background: var(--accent); color: #fff; box-shadow: 0 10px 20px -6px rgba(26,70,196,.6);
+      opacity: 0; pointer-events: none; transition: .3s; z-index: 1030;
+    }
+    .to-top.show { opacity: 1; pointer-events: auto; }
+    .to-top:hover { background: var(--navy); }
+    [data-bs-theme="dark"] .to-top:hover { background: #2f63e8; }
+    .modal-nav:hover { background: var(--accent); color: #fff; }
+
+    /* ---------- Readability: ขนาดและสีตัวอักษร ---------- */
+    body { font-size: 1.0625rem; line-height: 1.8; }
+    .small, small { font-size: .94em; }
+    .navbar-main .nav-link { color: rgba(255,255,255,.88); font-size: 1rem; }
+    .eyebrow { font-size: .95rem; }
+    .hero .lead { color: rgba(255,255,255,.92); font-size: 1.3rem; line-height: 1.7; max-width: 700px; }
+    .hero-role { font-size: 1.3rem; }
+    .stat-label { font-size: 1.02rem; color: var(--ink); }
+    .section-kicker { font-size: .88rem; }
+    .section-title { font-size: clamp(1.9rem, 3.6vw, 2.6rem); }
+    .section-intro { font-size: 1.12rem; color: var(--muted); max-width: 680px; margin-inline: auto; }
+    .info-list li { font-size: 1.05rem; }
+    .role-pill { font-size: .95rem; }
+    .duty { font-size: 1.02rem; color: var(--ink); }
+    .duty li { margin-bottom: 8px; }
+    .skill-chip { font-size: .98rem; color: var(--ink); }
+    .work-tag { font-size: .82rem; }
+    .work-title { font-size: 1.18rem; }
+    .work-desc { font-size: 1rem; color: var(--muted); }
+    .work-link-hint { font-size: .9rem; }
+    .ref-link { font-size: .97rem; }
+    .brand-badge { font-size: .82rem; }
+    .brand-card .brand-desc { font-size: 1rem; color: var(--muted); }
+    .role-list { font-size: 1rem; color: var(--ink); }
+    .channel .ch-name { font-size: 1rem; }
+    .contact-item small { font-size: .9rem; }
+    footer { font-size: .95rem; }
+
+    /* reveal animation */
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
+    .reveal.in { opacity: 1; transform: none; }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .reveal { opacity: 1; transform: none; transition: none; }
+      .work-card, .work-thumb img { transition: none; }
+    }
+
+    /* ---------- Print (ใช้พิมพ์เป็น CV) ---------- */
+    @media print {
+      .navbar-main, .to-top, .filter-bar, .no-print, #portfolio { display: none !important; }
+      .hero { background: #fff !important; color: #000; padding: 20px 0; }
+      .hero::after, .photo-wrap::before { display: none; }
+      .hero .lead, .hero h1 .grad { color: #000 !important; -webkit-text-fill-color: #000; }
+      section { padding: 20px 0; }
+      .stats { margin-top: 0; }
+      .card-soft, .stat-card { box-shadow: none; }
+      .reveal { opacity: 1 !important; transform: none !important; }
+      .contact-band { background: #fff !important; color: #000; border: 1px solid #ccc; }
+      .contact-item { color: #000; border-color: #ccc; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== Navbar ===== -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-main" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+        <span class="brand-mark">K</span>
+        <span class="font-head fw-semibold">Kiattikun I.</span>
+      </a>
+      <div class="d-flex align-items-center gap-2 order-lg-last">
+        <button class="btn btn-theme" id="themeToggle" type="button" aria-label="สลับโหมดสว่าง/มืด">
+          <i class="bi bi-moon-stars"></i>
+        </button>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="เมนู">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto me-lg-3">
+          <li class="nav-item"><a class="nav-link" href="#about">เกี่ยวกับ</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">ความสามารถ</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">ประสบการณ์</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">ผลงาน</a></li>
+          <li class="nav-item"><a class="nav-link" href="#channels">ช่องทางออนไลน์</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">การศึกษา</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">ติดต่อ</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== Hero ===== -->
+  <header class="hero" id="home">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7 order-2 order-lg-1 text-center text-lg-start">
+          <span class="eyebrow mb-4"><span class="dot"></span> IT &amp; Digital Marketing Management</span>
+          <h1 class="mb-3"><span class="grad">เกียรติกุล อินอุ่นโชติ</span></h1>
+          <p class="hero-role mb-3"><i class="bi bi-briefcase me-2"></i>Head of Marketing &amp; Information Technology</p>
+          <p class="lead mb-4 mx-auto mx-lg-0">
+            ประสบการณ์ด้าน IT มากกว่า 10 ปี และบริหารงาน IT และ Digital Marketing ในระดับหัวหน้างาน<br>
+            ครอบคลุม IT Infrastructure, ERP, Website, Digital Marketing และ E-Commerce
+          </p>
+          <div class="d-flex flex-wrap gap-2 justify-content-center justify-content-lg-start no-print">
+            <a href="#portfolio" class="btn btn-accent btn-lg px-4"><i class="bi bi-grid-1x2 me-2"></i>ดูผลงาน</a>
+            <a href="#contact" class="btn btn-ghost btn-lg px-4"><i class="bi bi-chat-dots me-2"></i>ติดต่อผม</a>
+            <a href="Resume_CV.pdf" class="btn btn-ghost btn-lg px-4" download><i class="bi bi-download me-2"></i>ดาวน์โหลด Resume</a>
+          </div>
+        </div>
+        <div class="col-lg-5 order-1 order-lg-2">
+          <div class="photo-wrap">
+            <img src="img/profile.jpg" alt="รูปโปรไฟล์ เกียรติกุล อินอุ่นโชติ" width="700" height="838">          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== Stats ===== -->
+  <div class="stats">
+    <div class="container">
+      <div class="row g-3 g-lg-4">
+        <div class="col-6 col-lg-3"><div class="stat-card reveal"><div class="stat-num" data-count="10" data-suffix="+">10+</div><div class="stat-label">ปี ประสบการณ์ด้าน IT</div></div></div>
+        <div class="col-6 col-lg-3"><div class="stat-card reveal"><div class="stat-num" data-count="3">3</div><div class="stat-label">แพลตฟอร์ม Marketplace</div></div></div>
+        <div class="col-6 col-lg-3"><div class="stat-card reveal"><div class="stat-num" data-count="4">4</div><div class="stat-label">เว็บไซต์ที่ดูแล</div></div></div>
+        <div class="col-6 col-lg-3"><div class="stat-card reveal"><div class="stat-num" data-count="7" data-suffix="+">7+</div><div class="stat-label">ระบบภายในที่พัฒนา</div></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== About ===== -->
+  <section id="about">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-7 reveal">
+          <div class="section-kicker">About Me</div>
+          <h2 class="section-title">Professional Profile</h2>
+          <p class="fs-5" style="color:var(--ink)">
+            ผู้บริหารงานด้านเทคโนโลยีสารสนเทศและการตลาดดิจิทัล มีประสบการณ์ทำงานด้าน IT มากกว่า 10 ปี
+            และมีประสบการณ์บริหารงานด้าน IT และ Digital Marketing ในระดับหัวหน้างาน
+          </p>
+          <p class="text-muted-2">
+            มีความสามารถทั้งด้าน Technical และ Management ครอบคลุมการบริหารระบบ IT Infrastructure, Server, Network, ERP, Website
+            และระบบสารสนเทศภายในองค์กร รวมถึงการวางแผนและดำเนินกลยุทธ์ Digital Marketing, E-Commerce และ Online Advertising
+          </p>
+          <p class="text-muted-2">
+            มีความสามารถในการวางแผนงาน บริหารทีมงาน ประสานงานกับผู้ให้บริการภายนอก วิเคราะห์ปัญหา
+            และนำเทคโนโลยีมาพัฒนากระบวนการทำงาน เพื่อเพิ่มประสิทธิภาพและสนับสนุนเป้าหมายทางธุรกิจ
+          </p>
+          <div class="row g-3 mt-2">
+            <div class="col-sm-6">
+              <div class="d-flex gap-3">
+                <div class="icon-box"><i class="bi bi-cpu"></i></div>
+                <div><h3 class="h6 fw-bold mb-1">ระบบไอที</h3><p class="text-muted-2 mb-0">เซิร์ฟเวอร์ · ERP · เว็บไซต์ · ระบบภายใน</p></div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="d-flex gap-3">
+                <div class="icon-box amber"><i class="bi bi-megaphone"></i></div>
+                <div><h3 class="h6 fw-bold mb-1">การตลาดดิจิทัล</h3><p class="text-muted-2 mb-0">มาร์เก็ตเพลส · โฆษณา · วัดผลบนเว็บไซต์</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 reveal">
+          <div class="card-soft p-4 p-lg-5">
+            <h3 class="h5 fw-semibold mb-3">ข้อมูลส่วนตัว</h3>
+            <ul class="list-unstyled info-list mb-0">
+              <li><i class="bi bi-person"></i><span>นายเกียรติกุล อินอุ่นโชติ</span></li>
+              <li><i class="bi bi-calendar-heart"></i><span>เกิด 4 กุมภาพันธ์ 2530</span></li>
+              <li><i class="bi bi-telephone"></i><a data-contact="tel" class="link-body-emphasis text-decoration-none"><span data-contact-text="tel">…</span></a></li>
+              <li><i class="bi bi-envelope"></i><a data-contact="mail" class="link-body-emphasis text-decoration-none"><span data-contact-text="mail">…</span></a></li>
+              <li><i class="bi bi-geo-alt"></i><span>นนทบุรี, ประเทศไทย</span></li>
+              <li><i class="bi bi-translate"></i><span>ไทย (ภาษาแม่), อังกฤษ พื้นฐาน</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Skills ===== -->
+  <section id="skills" class="bg-body">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <div class="section-kicker">Core Competencies</div>
+        <h2 class="section-title">ความสามารถหลัก</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-4 reveal">
+          <div class="card-soft p-4 h-100">
+            <div class="icon-box mb-3"><i class="bi bi-hdd-network"></i></div>
+            <h3 class="h5 fw-bold mb-3">IT Management &amp; Infrastructure</h3>
+            <span class="skill-chip">IT Infrastructure &amp; Network Management</span><span class="skill-chip">Server &amp; Website Administration</span><span class="skill-chip">Hardware &amp; Software Management</span><span class="skill-chip">ERP &amp; Business Application Management</span><span class="skill-chip">Database &amp; Internal System Management</span><span class="skill-chip">IT Support &amp; Help Desk Management</span>
+          </div>
+        </div>
+        <div class="col-lg-4 reveal">
+          <div class="card-soft p-4 h-100">
+            <div class="icon-box amber mb-3"><i class="bi bi-megaphone"></i></div>
+            <h3 class="h5 fw-bold mb-3">Digital Marketing &amp; E-Commerce</h3>
+            <span class="skill-chip">Digital Marketing Strategy &amp; Planning</span><span class="skill-chip">E-Commerce &amp; Marketplace Management</span><span class="skill-chip">Shopee, Lazada &amp; TikTok Shop Management</span><span class="skill-chip">Online Advertising &amp; Campaign Management</span><span class="skill-chip">Social Media &amp; Affiliate Marketing</span><span class="skill-chip">Google Analytics 4 (GA4)</span><span class="skill-chip">Google Tag Manager (GTM)</span><span class="skill-chip">Google Merchant Center</span>
+          </div>
+        </div>
+        <div class="col-lg-4 reveal">
+          <div class="card-soft p-4 h-100">
+            <div class="icon-box mb-3"><i class="bi bi-diagram-3"></i></div>
+            <h3 class="h5 fw-bold mb-3">Business &amp; Management</h3>
+            <span class="skill-chip">IT &amp; Digital Project Management</span><span class="skill-chip">Team Management &amp; Coordination</span><span class="skill-chip">Vendor &amp; Supplier Management</span><span class="skill-chip">IT Procurement &amp; Budget Control</span><span class="skill-chip">Business Process Improvement</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Experience ===== -->
+  <section id="experience">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <div class="section-kicker">Experience</div>
+        <h2 class="section-title">ประสบการณ์ทำงาน</h2>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="timeline">
+            <!-- YHM -->
+            <div class="tl-item current reveal">
+              <div class="card-soft p-4 p-lg-5">
+                <div class="d-flex flex-wrap justify-content-between gap-2 mb-2">
+                  <div>
+                    <h3 class="h4 fw-bold mb-1">บริษัท วาย เอช เอ็ม กรุ๊ป จำกัด</h3>
+                    <div class="text-muted-2"><i class="bi bi-geo-alt me-1"></i>บางกรวย นนทบุรี</div>
+                  </div>
+                  <span class="badge rounded-pill text-bg-primary align-self-start px-3 py-2">ก.พ. 2556 – ปัจจุบัน</span>
+                </div>
+                <div class="my-3">
+                  <a class="role-pill now" href="#role-head-mkt-it"><i class="bi bi-star-fill"></i> Head of Marketing &amp; Information Technology · 2567 – ปัจจุบัน <i class="bi bi-arrow-down-short"></i></a>
+                  <a class="role-pill" href="#role-head-it">Head of IT · 2565 – 2566 <i class="bi bi-arrow-down-short"></i></a>
+                  <a class="role-pill" href="#role-it-officer">IT Officer · 2556 – 2564 <i class="bi bi-arrow-down-short"></i></a>
+                </div>
+
+                <!-- ตำแหน่งปัจจุบัน -->
+                <div id="role-head-mkt-it" class="role-target role-head now mt-4">
+                  <h4 class="role-title">Head of Marketing &amp; Information Technology</h4>
+                  <span class="role-year">2567 – ปัจจุบัน</span>
+                </div>
+                <div class="row g-4 mt-0">
+                  <div class="col-md-6">
+                    <h5 class="h6 fw-bold d-flex align-items-center gap-2"><span class="icon-box amber" style="width:34px;height:34px;font-size:1rem"><i class="bi bi-bag-check"></i></span>Marketing &amp; Digital Business</h5>
+                    <ul class="duty ps-3 mt-3 mb-0">
+                      <li>วางแผนและบริหารกลยุทธ์การตลาดออนไลน์และช่องทางการขาย E-Commerce</li>
+                      <li>บริหารร้านค้าออนไลน์บน Shopee, Lazada และ TikTok Shop รวมถึงโปรโมชั่น แคมเปญการตลาด และ Affiliate Marketing</li>
+                      <li>วางแผนและควบคุมการโฆษณาผ่าน Facebook, TikTok, Shopee และ LINE OA</li>
+                      <li>วิเคราะห์ค่าธรรมเนียมและต้นทุนของแต่ละแพลตฟอร์ม เพื่อวางแผนราคาและเพิ่มประสิทธิภาพการขาย</li>
+                      <li>ใช้ GA4 และ Google Tag Manager ในการติดตามและวิเคราะห์พฤติกรรมลูกค้าบนเว็บไซต์</li>
+                      <li>ดูแล Google Business Profile และ Merchant Center เพื่อสนับสนุนการเข้าถึงลูกค้า</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6">
+                    <h5 class="h6 fw-bold d-flex align-items-center gap-2"><span class="icon-box" style="width:34px;height:34px;font-size:1rem"><i class="bi bi-server"></i></span>IT Management &amp; Operations</h5>
+                    <ul class="duty ps-3 mt-3 mb-0">
+                      <li>บริหารจัดการระบบ IT Infrastructure, Server, Network และ Website ขององค์กร</li>
+                      <li>ดูแลและบริหารระบบ ERP Microsoft Dynamics NAV 2018 และโปรแกรมบัญชี Express</li>
+                      <li>พัฒนาและปรับปรุงระบบสารสนเทศภายในองค์กร เพื่อสนับสนุนการทำงานของหน่วยงานต่าง ๆ</li>
+                      <li>ดูแลระบบลงทะเบียนรับประกันสินค้า E-Payslip ระบบฐานข้อมูลสินค้า ระบบเช็คสต๊อกสินค้า ระบบงานซ่อม และระบบทะเบียนอุปกรณ์ไอที</li>
+                      <li>บริหารงาน IT Support และ Help Desk รวมถึงแก้ไขปัญหาด้าน Hardware และ Software</li>
+                      <li>วางแผนจัดหาอุปกรณ์ IT ประเมินความเหมาะสมของเทคโนโลยี และประสานงานกับผู้ให้บริการภายนอก</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- ตำแหน่งก่อนหน้าในบริษัทเดียวกัน -->
+                <div class="row g-4 mt-2">
+                  <div class="col-md-6">
+                    <div id="role-head-it" class="role-target role-head">
+                      <h4 class="role-title">Head of IT</h4>
+                      <span class="role-year">2565 – 2566</span>
+                    </div>
+                    <ul class="duty ps-3 mt-3 mb-0">
+                      <li>บริหารจัดการระบบ IT และโครงสร้างพื้นฐานด้านเทคโนโลยีสารสนเทศ</li>
+                      <li>ดูแล Server, Website, Database และระบบเครือข่ายขององค์กร</li>
+                      <li>บริหารและดูแลระบบ ERP และโปรแกรมสนับสนุนการดำเนินงาน</li>
+                      <li>พัฒนาระบบงานภายในเพื่อเพิ่มประสิทธิภาพการทำงาน</li>
+                      <li>ควบคุมและสนับสนุนการแก้ไขปัญหาด้าน IT ให้แก่ผู้ใช้งาน</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6">
+                    <div id="role-it-officer" class="role-target role-head">
+                      <h4 class="role-title">IT Officer</h4>
+                      <span class="role-year">2556 – 2564</span>
+                    </div>
+                    <ul class="duty ps-3 mt-3 mb-0">
+                      <li>ดูแลระบบคอมพิวเตอร์ Hardware, Software และ Network ภายในองค์กร</li>
+                      <li>ให้บริการ IT Support และแก้ไขปัญหาการใช้งานของพนักงาน</li>
+                      <li>ดูแลระบบ Website, Server และฐานข้อมูล</li>
+                      <li>ติดตั้งและบำรุงรักษาอุปกรณ์และระบบ IT</li>
+                      <li>ประสานงานกับผู้ให้บริการภายนอกเพื่อดูแลและแก้ไขปัญหาระบบสารสนเทศ</li>
+                    </ul>
+                  </div>
+                </div>
+                <a href="#channels" class="ref-link cta mt-4 no-print"><i class="bi bi-globe2"></i>ดูเว็บไซต์และช่องทางออนไลน์ที่ดูแล</a>
+              </div>
+            </div>
+
+            <!-- IT Fever -->
+            <div class="tl-item reveal">
+              <div class="card-soft p-4 p-lg-5">
+                <div class="d-flex flex-wrap justify-content-between gap-2 mb-2">
+                  <div>
+                    <h3 class="h4 fw-bold mb-1">ร้านไอที ฟีเวอร์ เซอร์วิส</h3>
+                    <div class="text-muted-2"><i class="bi bi-geo-alt me-1"></i>ร้อยเอ็ด</div>
+                  </div>
+                  <span class="badge rounded-pill text-bg-secondary align-self-start px-3 py-2">ก.พ. 2554 – ต.ค. 2554</span>
+                </div>
+                <span class="role-pill mt-2">Website Officer (เจ้าหน้าที่ดูแลเว็บไซต์)</span>
+                <ul class="duty ps-3 mt-2 mb-0">
+                  <li>อัปเดตเนื้อหาและดูแลเว็บไซต์ของร้าน</li>
+                  <li>พัฒนาฟังก์ชันใหม่เพื่อให้เว็บไซต์ใช้งานได้สะดวกขึ้น</li>
+                  <li>จัดอบรมการใช้งานเว็บไซต์ให้ผู้ใช้งาน</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Portfolio ===== -->
+  <section id="portfolio">
+    <div class="container">
+      <div class="text-center mb-4 reveal">
+        <div class="section-kicker">Portfolio</div>
+        <h2 class="section-title">ผลงานที่ผ่านมา</h2>
+        <p class="section-intro">ระบบภายใน รายงานจาก ERP เว็บไซต์ และงานการตลาด — กดที่ผลงานเพื่อดูภาพเต็ม</p>
+      </div>
+      <div class="filter-bar mb-5 reveal" role="group" aria-label="กรองผลงาน">
+        <button class="btn active" data-filter="all">ทั้งหมด</button>
+        <button class="btn" data-filter="system">ระบบภายใน</button>
+        <button class="btn" data-filter="data">ระบบรายงานข้อมูลเชิงลึก</button>
+        <button class="btn" data-filter="web">เว็บไซต์</button>
+        <button class="btn" data-filter="marketing">การตลาดดิจิทัล</button>
+        <button class="btn" data-filter="erp">ERP &amp; บัญชี</button>
+      </div>
+      <div class="row g-4" id="workGrid"><!-- เติมด้วย JS จาก WORKS --></div>
+    </div>
+  </section>
+
+  <!-- ===== Channels: เว็บไซต์และช่องทางออนไลน์ที่ดูแล (อ้างอิงผลงาน) ===== -->
+  <section id="channels" class="pt-0">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <div class="section-kicker">Live References</div>
+        <h2 class="section-title">เว็บไซต์และช่องทางออนไลน์ที่ดูแล</h2>
+        <p class="section-intro mb-0">ช่องทางจริงที่ผมดูแลที่บริษัท วาย เอช เอ็ม กรุ๊ป — กดลิงก์เพื่อดูได้ทันที</p>
+      </div>
+      <div class="company-strip reveal">
+        <img src="img/logo.png" alt="โลโก้ YHM Group">
+        <div class="flex-grow-1" style="min-width:220px">
+          <div class="fw-bold">บริษัท วาย เอช เอ็ม กรุ๊ป จำกัด</div>
+          <div class="text-muted-2">ก.พ. 2556 – ปัจจุบัน · IT Officer → Head of IT → Head of Marketing &amp; Information Technology</div>
+        </div>
+        <a href="#experience" class="ref-link cta m-0 no-print"><i class="bi bi-briefcase"></i>ดูประสบการณ์ทำงาน</a>
+      </div>
+      <div class="row g-4" id="channelGrid"><!-- เติมด้วย JS จาก CHANNELS --></div>
+    </div>
+  </section>
+
+  <!-- ===== Education ===== -->
+  <section id="education" class="bg-body">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <div class="section-kicker">Education</div>
+        <h2 class="section-title">การศึกษา</h2>
+      </div>
+      <div class="row justify-content-center g-4">
+        <div class="col-lg-4 col-md-6 reveal">
+          <div class="card-soft p-4 h-100">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+              <div class="icon-box"><i class="bi bi-mortarboard"></i></div>
+              <span class="edu-year">2551 – 2553</span>
+            </div>
+            <h3 class="h5 fw-bold mb-1">ปริญญาตรี</h3>
+            <p class="mb-1">สาขาเทคโนโลยีสารสนเทศและการสื่อสาร</p>
+            <p class="small text-muted-2 mb-0">มหาวิทยาลัยมหาสารคาม</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 reveal">
+          <div class="card-soft p-4 h-100">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+              <div class="icon-box amber"><i class="bi bi-pc-display"></i></div>
+              <span class="edu-year">2549 – 2551</span>
+            </div>
+            <h3 class="h5 fw-bold mb-1">ปวส.</h3>
+            <p class="mb-1">สาขาช่างเทคนิคคอมพิวเตอร์</p>
+            <p class="small text-muted-2 mb-0">วิทยาลัยเทคนิคร้อยเอ็ด</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 reveal">
+          <div class="card-soft p-4 h-100">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+              <div class="icon-box"><i class="bi bi-motherboard"></i></div>
+              <span class="edu-year">2546 – 2549</span>
+            </div>
+            <h3 class="h5 fw-bold mb-1">ปวช.</h3>
+            <p class="mb-1">สาขาช่างอิเล็กทรอนิกส์</p>
+            <p class="small text-muted-2 mb-0">วิทยาลัยเทคนิคร้อยเอ็ด</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-band reveal">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-5" style="position:relative;z-index:1">
+            <h2 class="section-title mb-0" style="color:var(--accent-2);letter-spacing:.04em">Contact</h2>
+          </div>
+          <div class="col-lg-7">
+            <div class="row g-3">
+              <div class="col-sm-6"><a class="contact-item" data-contact="tel"><i class="bi bi-telephone-fill"></i><div><small class="opacity-75 d-block">โทรศัพท์</small><b data-contact-text="tel">…</b></div></a></div>
+              <div class="col-sm-6"><a class="contact-item" data-contact="mail"><i class="bi bi-envelope-fill"></i><div><small class="opacity-75 d-block">อีเมล</small><b data-contact-text="mail">…</b></div></a></div>
+              <div class="col-sm-6"><div class="contact-item"><i class="bi bi-geo-alt-fill"></i><div><small class="opacity-75 d-block">ที่อยู่</small><b>นนทบุรี, ประเทศไทย</b></div></div></div>
+              <div class="col-sm-6 no-print"><a class="contact-item" href="Resume_CV.pdf" download><i class="bi bi-file-earmark-pdf-fill"></i><div><small class="opacity-75 d-block">เอกสาร</small><b>ดาวน์โหลด Resume</b></div></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center">
+    <div class="container">© <span id="year"></span> เกียรติกุล อินอุ่นโชติ · Resume &amp; Portfolio</div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="กลับขึ้นด้านบน"><i class="bi bi-arrow-up"></i></button>
+
+  <!-- ===== Portfolio Modal ===== -->
+  <div class="modal fade" id="workModal" tabindex="-1" aria-labelledby="workModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-img-wrap position-relative">
+          <button class="modal-nav prev" type="button" aria-label="ผลงานก่อนหน้า"><i class="bi bi-chevron-left"></i></button>
+          <img id="workModalImg" src="" alt="">
+          <button class="modal-nav next" type="button" aria-label="ผลงานถัดไป"><i class="bi bi-chevron-right"></i></button>
+        </div>
+        <div class="modal-body p-4">
+          <div class="d-flex justify-content-between align-items-start gap-3">
+            <div>
+              <div class="work-tag" id="workModalTag"></div>
+              <h3 class="h5 fw-bold mt-1 mb-2" id="workModalTitle"></h3>
+              <p class="text-muted-2 mb-2" id="workModalDesc"></p>
+              <div id="workModalTech"></div>
+              <div id="workModalLinks" class="mt-2"></div>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="ปิด"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // ===== ข้อมูลผลงาน (รูปที่แสดงบนเว็บอยู่ใน Portfolio_public/) =====
+    const CAT = { system: 'ระบบภายใน', data: 'ระบบรายงานข้อมูลเชิงลึก', web: 'เว็บไซต์', marketing: 'การตลาดดิจิทัล', erp: 'ERP & บัญชี' };
+    const WORKS = [
+      { cat: 'system', file: 'web portal ระบบเชื่อมต่อข้อมูลกลางของบริษัท DATA CENTER.png',
+        title: 'Web Portal — ศูนย์รวมระบบภายใน (DATA CENTER)',
+        desc: 'เข้าทุกระบบของบริษัทได้จากหน้าเดียว เช่น ข้อมูลจัดส่ง ใบนำส่ง งานซ่อม รับประกันสินค้า และ E-Payslip',
+        tech: ['PHP', 'MariaDB', 'Bootstrap'] },
+      { cat: 'data', file: 'ระบบรายงานข้อมูลเชิงลึก ดึงข้อมูลจากฐานข้อมูลโปรแกรม ERP.png',
+        title: 'YHM NAV Insights — ยอดขายรายพื้นที่',
+        desc: 'ดึงข้อมูลตรงจาก ERP แสดงยอดขายรายจังหวัดบนแผนที่ แยกตามพนักงานขาย กรองตามแบรนด์และช่องทาง ส่งออก Excel / CSV / PDF ได้',
+        tech: ['PHP', 'SQL Server', 'NAV 2018', 'Chart / Map'] },
+      { cat: 'data', file: 'ระบบรายงานข้อมูลเชิงลึก E-marketplace ดึงข้อมูลจากฐานข้อมูลโปรแกรม ERP.png',
+        title: 'รายงาน E-Marketplace — สัดส่วนยอดขาย',
+        desc: 'เทียบยอดขายรายเดือนของ Shopee, Lazada, TikTok และหน้าร้าน แยกตามกลุ่มแบรนด์ ใช้วางแผนแคมเปญและตั้งราคา',
+        tech: ['PHP', 'SQL Server', 'Data Visualization'] },
+      { cat: 'system', file: 'ระบบหลังบ้านจัดการฐานข้อมูลสินค้าทั้งหมด.png',
+        title: 'ระบบหลังบ้านจัดการฐานข้อมูลสินค้า',
+        desc: 'ฐานข้อมูลสินค้าหลักกว่า 4,700 รายการ เชื่อมกับ ERP เพื่อคำนวณราคาขายและดึงสต๊อกอัตโนมัติ แล้วส่งต่อให้ร้านบน E-Marketplace, ป้ายราคา QR Code หน้าร้าน, ระบบเช็คสต๊อกของเซลล์และลูกค้า, เว็บ kressthailand.com, toolsmany.com และระบบรับประกัน Kress',
+        tech: ['PHP', 'MySQL', 'SQL Server', 'NAV ERP'] },
+      { cat: 'system', file: 'ระบบรับประกันสินค้า Kress.png',
+        title: 'ระบบลงทะเบียนรับประกันสินค้า Kress',
+        desc: 'ลูกค้าลงทะเบียนรับประกันเองผ่าน LINE OA ของ Kress ใช้ง่ายบนมือถือ และเปิดดูสินค้าที่ลงทะเบียนไว้ได้ตลอด',
+        tech: ['PHP', 'MySQL', 'LINE OA'] },
+      { cat: 'web', file: 'yhmshop.com.png', title: 'yhmshop.com',
+        desc: 'เว็บไซต์หลักของบริษัท ดูแลทั้งเนื้อหา เซิร์ฟเวอร์ และ SSL',
+        tech: ['Website', 'Apache', 'SSL'] },
+      { cat: 'web', file: 'kressthailand.com.png', title: 'kressthailand.com',
+        desc: 'เว็บไซต์แบรนด์ Kress ประเทศไทย รวมข้อมูลสินค้าและบริการหลังการขาย ติดตั้ง GA4 และ Google Tag Manager ไว้ดูว่าโฆษณาไหนพาคนเข้าเว็บ',
+        tech: ['Website', 'GA4', 'Google Tag Manager'] },
+      { cat: 'web', file: 'toolsmany.com.png', title: 'toolsmany.com',
+        desc: 'เว็บไซต์ร้านเครื่องมือช่าง Toolsmany ติดตั้ง GA4 และ Google Tag Manager ไว้ดูว่าโฆษณาไหนพาคนเข้าเว็บ และเกิดยอดขายจริง',
+        tech: ['Website', 'GA4', 'Google Tag Manager'] },
+      { cat: 'marketing', file: 'Facebook Ads.png', title: 'Facebook Ads — แคมเปญ Toolsmany & Kress',
+        desc: 'วางแคมเปญตั้งแต่สร้างการรับรู้จนถึงการมีส่วนร่วม และคุมต้นทุนต่อผลลัพธ์ให้ต่ำ',
+        tech: ['Meta Ads', 'Awareness', 'Engagement'] },
+      { cat: 'marketing', file: 'Tiktok Ads.png', title: 'TikTok Ads — แผนโฆษณา Toolsmany & Kress',
+        desc: 'ยิงโฆษณาสร้างการรับรู้และการมีส่วนร่วม เข้าถึงกลุ่มเป้าหมายได้กว้างในต้นทุนที่คุ้มค่า',
+        tech: ['TikTok Ads', 'Reach', 'Community'] },
+      { cat: 'marketing', file: 'Shopee Toolsmany.png', title: 'Shopee — ร้าน Toolsmany และ Kress Thailand',
+        desc: 'บริหารร้าน Toolsmany และ Kress Thailand ทั้งโปรโมชั่น โค้ดส่วนลด Flash Sale และ Shopee Ads พร้อมวิเคราะห์ยอดขาย',
+        tech: ['Shopee', 'Shopee Ads', 'Business Insights'] },
+      { cat: 'erp', file: 'Microsoft Dynamics NAV 2018.png', title: 'Microsoft Dynamics NAV 2018',
+        desc: 'ดูแลระบบ ERP ทั้งฐานข้อมูล ผู้ใช้งาน และการส่งข้อมูลไปยังระบบรายงานและเว็บไซต์',
+        tech: ['ERP', 'SQL Server'] },
+      { cat: 'erp', file: 'โปรแกรมบัญชี Express.png', title: 'โปรแกรมบัญชี Express',
+        desc: 'ติดตั้ง ดูแล และแก้ปัญหาโปรแกรมบัญชีให้ฝ่ายบัญชี',
+        tech: ['Accounting', 'Support'] }
+    ];
+
+    // ===== ลิงก์ปลายทางอ้างอิงผลงาน (ผูกกับชื่อไฟล์รูป) =====
+    const L = (label, url) => ({ label, url });
+    const REF = {
+      'yhmshop.com.png': [L('yhmshop.com', 'https://www.yhmshop.com/')],
+      'kressthailand.com.png': [L('kressthailand.com', 'https://www.kressthailand.com/')],
+      'toolsmany.com.png': [L('toolsmany.com', 'https://www.toolsmany.com/')],
+      'ระบบรับประกันสินค้า Kress.png': [L('ลงทะเบียนผ่าน LINE OA Kress', 'https://lin.ee/eioF6zA')],
+      'Shopee Toolsmany.png': [L('Shopee Toolsmany', 'https://shopee.co.th/toolsmany_shop/'), L('Shopee Kress Thailand', 'https://shopee.co.th/kressthailand')],
+      'Facebook Ads.png': [L('Facebook Toolsmany', 'https://www.facebook.com/toolsmanythailand'), L('Facebook Kress', 'https://www.facebook.com/kressthailandofficial')],
+      'Tiktok Ads.png': [L('TikTok Toolsmany', 'https://www.tiktok.com/@toolsmanyshop'), L('TikTok Kress', 'https://www.tiktok.com/@kressthailandofficial')]
+    };
+    WORKS.forEach(w => { w.links = REF[w.file] || []; });
+
+    // ===== ช่องทางออนไลน์ที่ดูแล (จาก index_social_link.html) =====
+    const ICON = { web: 'img/www2.png', fb: 'img/facebook.png', line: 'img/Line.svg', yt: 'img/youtube.svg', tt: 'img/tiktok.svg', shopee: 'img/shopee.svg', lazada: 'img/lazada.png' };
+    const CHANNELS = [
+      { name: 'YHM Group', logo: 'img/logo.png', badge: 'เว็บไซต์บริษัท',
+        desc: 'เว็บแนะนำบริษัท และเว็บให้ลูกค้าเช็คสต๊อกเอง ข้อมูลดึงจากระบบหลังบ้านโดยตรง',
+        roles: [
+          'ดูแลเซิร์ฟเวอร์ โดเมน และ SSL',
+          'ดึงข้อมูลสินค้าและสต๊อกจาก ERP มาแสดงบนเว็บ',
+          'อัปเดตเนื้อหาและข้อมูลสินค้า'
+        ],
+        links: [
+          { i: 'web', n: 'Website บริษัท', u: 'https://www.yhmgroup.co.th/' },
+          { i: 'web', n: 'ลูกค้าเช็คสต๊อก', u: 'https://www.yhmshop.com/' }
+        ] },
+      { name: 'Toolsmany', logo: 'img/toolsmany.png', badge: 'ร้านค้าออนไลน์ของบริษัท',
+        desc: 'ร้านเครื่องมือช่างออนไลน์ของบริษัท ขายผ่านเว็บไซต์และมาร์เก็ตเพลส',
+        roles: [
+          'บริหารร้าน Shopee, Lazada และ TikTok Shop ทั้งโปรโมชั่น โค้ดส่วนลด และโฆษณา',
+          'วางคอนเทนต์และโฆษณาบน Facebook และ TikTok',
+          'ติดตั้ง GA4 และ Google Tag Manager บนเว็บ toolsmany.com เพื่อดูว่าโฆษณาไหนพาลูกค้ามาซื้อ'
+        ],
+        links: [
+          { i: 'web', n: 'Website', u: 'https://www.toolsmany.com/' },
+          { i: 'fb', n: 'Facebook', u: 'https://www.facebook.com/toolsmanythailand' },
+          { i: 'line', n: 'LINE OA', u: 'https://lin.ee/sY6e1a3' },
+          { i: 'yt', n: 'YouTube', u: 'https://www.youtube.com/@toolsmanythailand' },
+          { i: 'tt', n: 'TikTok', u: 'https://www.tiktok.com/@toolsmanyshop' },
+          { i: 'shopee', n: 'Shopee', u: 'https://shopee.co.th/toolsmany_shop/' },
+          { i: 'lazada', n: 'Lazada', u: 'https://www.lazada.co.th/shop/toolsmany-shop/' }
+        ] },
+      { name: 'Kress Thailand', logo: 'img/LOGO Kress.png', badge: 'แบรนด์ที่บริษัทจำหน่าย',
+        desc: 'แบรนด์เครื่องมือช่าง Kress ในไทย ดูแลครบทั้งเว็บไซต์ ระบบรับประกัน โซเชียล และร้านค้าออนไลน์',
+        roles: [
+          'พัฒนาระบบรับประกันสินค้าผ่าน LINE OA',
+          'ดูแลเพจและยิงโฆษณา Facebook, TikTok, LINE OA',
+          'บริหารร้าน Shopee, Lazada และ TikTok Shop',
+          'ติดตั้ง GA4 และ Google Tag Manager บนเว็บ kressthailand.com เพื่อดูว่าโฆษณาไหนได้ผล'
+        ],
+        links: [
+          { i: 'web', n: 'Website', u: 'https://www.kressthailand.com/' },
+          { i: 'fb', n: 'Facebook', u: 'https://www.facebook.com/kressthailandofficial' },
+          { i: 'line', n: 'LINE OA', u: 'https://lin.ee/eioF6zA' },
+          { i: 'yt', n: 'YouTube', u: 'https://www.youtube.com/@kressthailandofficial' },
+          { i: 'tt', n: 'TikTok', u: 'https://www.tiktok.com/@kressthailandofficial' },
+          { i: 'shopee', n: 'Shopee', u: 'https://shopee.co.th/kressthailand' },
+          { i: 'lazada', n: 'Lazada', u: 'https://s.lazada.co.th/s.CgCwY' }
+        ] }
+    ];
+
+    // ใช้รูปชุดที่ปิดข้อมูลสำคัญแล้ว (ต้นฉบับอยู่ใน Portfolio/ ห้ามอัปขึ้นเว็บ)
+    const imgSrc = f => 'Portfolio_public/' + encodeURIComponent(f);
+    const esc = s => s.replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+
+    // ===== Render portfolio =====
+    const grid = document.getElementById('workGrid');
+    grid.innerHTML = WORKS.map((w, i) => `
+      <div class="col-md-6 col-lg-4 work-item reveal" data-cat="${w.cat}">
+        <button type="button" class="work-card" data-index="${i}" aria-label="ดูผลงาน ${esc(w.title)}">
+          <div class="work-thumb">
+            <img src="${imgSrc(w.file)}" alt="${esc(w.title)}" loading="lazy">
+            <span class="zoom"><span><i class="bi bi-arrows-fullscreen me-2"></i>ดูภาพเต็ม</span></span>
+          </div>
+          <div class="work-body">
+            <div class="work-tag">${esc(CAT[w.cat])}</div>
+            <div class="work-title">${esc(w.title)}</div>
+            <p class="work-desc">${esc(w.desc)}</p>
+            ${w.links.length ? '<span class="work-link-hint"><i class="bi bi-link-45deg"></i>มีลิงก์อ้างอิงผลงานจริง</span>' : ''}
+          </div>
+        </button>
+      </div>`).join('');
+
+    // ===== Render channels =====
+    const host = u => u.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '');
+    document.getElementById('channelGrid').innerHTML = CHANNELS.map(c => `
+      <div class="col-lg-4 col-md-6 reveal">
+        <div class="card-soft brand-card">
+          <div class="brand-logo"><img src="${encodeURI(c.logo)}" alt="โลโก้ ${esc(c.name)}" loading="lazy"></div>
+          <span class="brand-badge mb-2">${esc(c.badge)}</span>
+          <h3 class="h5 fw-bold mb-2">${esc(c.name)}</h3>
+          <p class="brand-desc mb-3">${esc(c.desc)}</p>
+          <div class="fw-bold mb-2">สิ่งที่ผมดูแล</div>
+          <ul class="role-list mb-4">
+            ${c.roles.map(r => `<li><i class="bi bi-check-circle-fill"></i><span>${esc(r)}</span></li>`).join('')}
+          </ul>
+          <div class="fw-bold mb-2">ช่องทางออนไลน์</div>
+          <div class="channel-list">
+            ${c.links.map(l => `
+              <a class="channel" href="${l.u}" target="_blank" rel="noopener" title="${esc(l.n)} — ${esc(host(l.u))}">
+                <span class="ch-icon"><img src="${ICON[l.i]}" alt="" loading="lazy"></span>
+                <span class="ch-text"><span class="ch-name">${esc(l.n)}</span></span>
+              </a>`).join('')}
+          </div>
+        </div>
+      </div>`).join('');
+
+    // ===== Filter =====
+    let visible = WORKS.map((_, i) => i);
+    document.querySelectorAll('.filter-bar .btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-bar .btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const f = btn.dataset.filter;
+        visible = [];
+        document.querySelectorAll('.work-item').forEach((el, i) => {
+          const show = f === 'all' || el.dataset.cat === f;
+          el.classList.toggle('hide', !show);
+          if (show) { visible.push(i); el.classList.add('in'); }
+        });
+      });
+    });
+
+    // ===== Modal (lightbox) =====
+    const modalEl = document.getElementById('workModal');
+    const modal = new bootstrap.Modal(modalEl);
+    let current = 0;
+    function showWork(i) {
+      current = i;
+      const w = WORKS[i];
+      document.getElementById('workModalImg').src = imgSrc(w.file);
+      document.getElementById('workModalImg').alt = w.title;
+      document.getElementById('workModalTag').textContent = CAT[w.cat];
+      document.getElementById('workModalTitle').textContent = w.title;
+      document.getElementById('workModalDesc').textContent = w.desc;
+      document.getElementById('workModalTech').innerHTML = w.tech.map(t => `<span class="skill-chip small">${esc(t)}</span>`).join('');
+      document.getElementById('workModalLinks').innerHTML = w.links.map(l =>
+        `<a class="ref-link" href="${l.url}" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i>${esc(l.label)}</a>`).join('');
+    }
+    function step(d) {
+      const pos = visible.indexOf(current);
+      showWork(visible[(pos + d + visible.length) % visible.length]);
+    }
+    grid.addEventListener('click', e => {
+      const card = e.target.closest('.work-card');
+      if (!card) return;
+      showWork(+card.dataset.index);
+      modal.show();
+    });
+    modalEl.querySelector('.prev').addEventListener('click', () => step(-1));
+    modalEl.querySelector('.next').addEventListener('click', () => step(1));
+    modalEl.addEventListener('keydown', e => {
+      if (e.key === 'ArrowLeft') step(-1);
+      if (e.key === 'ArrowRight') step(1);
+    });
+
+    // ===== Navbar / to-top / active link =====
+    const nav = document.getElementById('mainNav');
+    const toTop = document.getElementById('toTop');
+    const links = [...document.querySelectorAll('#navMenu .nav-link')];
+    function onScroll() {
+      const y = window.scrollY;
+      nav.classList.toggle('scrolled', y > 40);
+      toTop.classList.toggle('show', y > 600);
+      let active = null;
+      links.forEach(l => {
+        const s = document.querySelector(l.getAttribute('href'));
+        if (s && s.offsetTop - 120 <= y) active = l;
+      });
+      links.forEach(l => l.classList.toggle('active', l === active));
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+    toTop.addEventListener('click', () => window.scrollTo({ top: 0 }));
+    // ปิดเมนูมือถือเมื่อกดลิงก์
+    links.forEach(l => l.addEventListener('click', () => {
+      const c = bootstrap.Collapse.getInstance(document.getElementById('navMenu'));
+      if (c) c.hide();
+    }));
+
+    // ===== Theme toggle (จำค่าไว้ในเครื่องผู้ชม) =====
+    const root = document.documentElement;
+    const themeBtn = document.getElementById('themeToggle');
+    function setTheme(t) {
+      root.setAttribute('data-bs-theme', t);
+      themeBtn.innerHTML = t === 'dark' ? '<i class="bi bi-sun"></i>' : '<i class="bi bi-moon-stars"></i>';
+    }
+    let saved = null;
+    try { saved = localStorage.getItem('cv-theme'); } catch (e) {}
+    setTheme(saved || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+    themeBtn.addEventListener('click', () => {
+      const t = root.getAttribute('data-bs-theme') === 'dark' ? 'light' : 'dark';
+      setTheme(t);
+      try { localStorage.setItem('cv-theme', t); } catch (e) {}
+    });
+
+    // ===== Reveal on scroll + count up =====
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(en => {
+        if (!en.isIntersecting) return;
+        en.target.classList.add('in');
+        en.target.querySelectorAll('[data-count]').forEach(countUp);
+        io.unobserve(en.target);
+      });
+    }, { threshold: .12 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+    function countUp(el) {
+      const end = +el.dataset.count, suf = el.dataset.suffix || '';
+      if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      let n = 0; const t0 = performance.now();
+      (function tick(t) {
+        n = Math.min(1, (t - t0) / 900);
+        el.textContent = Math.round(end * n) + suf;
+        if (n < 1) requestAnimationFrame(tick);
+      })(t0);
+    }
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // ===== ข้อมูลติดต่อ: เก็บแบบเข้ารหัส (กลับด้าน + base64) ไม่ให้บอทอ่านจาก HTML ได้ตรงๆ =====
+    // ถอดเมื่อเปิดในเบราว์เซอร์จริงเท่านั้น — เบราว์เซอร์อัตโนมัติ (webdriver) จะไม่ได้ข้อมูล
+    (function () {
+      const ENC = { tel: 'MzY0MzY0NTE4MA==', telShow: 'MzY0My02NDUtMTgw', mail: 'bW9jLmxpYW1nQGouMTAxZ2ln' };
+      const dec = s => atob(s).split('').reverse().join('');
+      const isBot = navigator.webdriver === true || /bot|crawl|spider|headless/i.test(navigator.userAgent);
+      const val = isBot
+        ? { tel: { href: null, text: 'โปรดดูในไฟล์ Resume' }, mail: { href: null, text: 'โปรดดูในไฟล์ Resume' } }
+        : { tel: { href: 'tel:' + dec(ENC.tel), text: dec(ENC.telShow) }, mail: { href: 'mailto:' + dec(ENC.mail), text: dec(ENC.mail) } };
+      document.querySelectorAll('[data-contact]').forEach(a => {
+        const v = val[a.dataset.contact];
+        if (v.href) a.href = v.href;
+      });
+      document.querySelectorAll('[data-contact-text]').forEach(el => {
+        el.textContent = val[el.dataset.contactText].text;
+      });
+    })();
+  </script>
+</body>
+</html>
